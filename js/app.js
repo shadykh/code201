@@ -308,6 +308,7 @@ for ( o ; o < 6; o++) {
       score=score+1;
       o = 6;
       alert('The right answers are ['+fruit+']');
+      //console.log('I asked about guessing my fav fruit and you answerd!');
       break;
     }
   }
