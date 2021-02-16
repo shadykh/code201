@@ -1,8 +1,18 @@
 body{
-    width: 960;
-    margin: auto;
-    background-image: url(https://cdn6.f-cdn.com/contestentries/1476645/3722903/5c79055058298_thumb900.jpg);
-    background-size: cover;
+    /*width: auto;
+    margin: auto;*/
+    /* background-image: url(https://cdn6.f-cdn.com/contestentries/1476645/3722903/5c79055058298_thumb900.jpg);
+    background-size: cover;*/
+    background-color: cadetblue;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 20px solid rgb(116, 116, 116);
+    background: lavender;
+    border-radius: 100px;
 }
 #headerImg{
     width: 100px;
@@ -41,23 +51,25 @@ body{
 h3{
   text-transform: capitalize;
   border-radius: 10px;
-  border-width: 20px;
-  width: 670px;
+  width: 50%;
   margin: auto;
   background: aquamarine;
-  margin-inline-end: 390px;
-  padding-inline-start: 40px;
+  display: block;
+  margin: auto;
 }
 article{
   line-height: 30px;
   text-align: center;
 }
 main ul li{
-  list-style-type: none;
+  /*list-style-type: none;
   border-radius: 10px;
   border-width: 20px;
   width: 700px;
-  margin: auto;
+  margin: auto;*/
+}
+ul{
+  list-style-type: none;
 }
 main ul li:nth-child(odd){
   background-color: rgb(203, 248, 233);
@@ -78,7 +90,11 @@ footer{
   align-items: center;
   background-color: gainsboro;
   font-family: cursive;
+  border-radius: 20px;
 }
 nav{
   text-align: center;
+}
+ol{
+  display: inline-block;
 }
