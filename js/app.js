@@ -130,6 +130,7 @@ default:
 */
 
 
+
 let userName = prompt('Please, enter your name!','Enter it here');
 
 alert('You are welcome \''+userName+'\' to our website');
@@ -202,7 +203,7 @@ if (anime === 'yes' || anime === 'y') {
   alert('Sorry, you do not follow the instruction.');
 }
 
-let custSuppAdv = prompt('The fourth question: Does Shady watch Anime ?','yes/no,y/n');
+let custSuppAdv = prompt('The last question: Does Shady work as a customer support advisor ?','yes/no,y/n');
 custSuppAdv=custSuppAdv.toLocaleLowerCase();
 
 
@@ -211,7 +212,7 @@ if (custSuppAdv === 'yes' || custSuppAdv === 'y') {
   //console.log('Answer for Q5: yes \'',userName,'\' your answer is correct, Shady works as a customer support advisor');
   score= score +1;
 } else if (custSuppAdv === 'n' || custSuppAdv === 'no') {
-  alert('Sorry \''+ userName + '\' your answer is wrong, Shady watchs Anime');
+  alert('Sorry \''+ userName + '\' your answer is wrong, Shady works as a customer support advisor');
   //console.log('Answer for Q5: no \'',userName,'\' your answer is wrong, Shady works as a customer support advisor');
 } else{
   alert('Sorry, you do not follow the instruction.');
@@ -242,27 +243,81 @@ if (i==3){
   //console.log('I asked about guessing number but you did not answer!');
 }
 
-alert('Now we will play another guessing game, press ok to play!');
 
-let guessFruit = prompt( 'Turn on your detective skills and guess the fruit that I love?[You have only 6 attempts]','Write your guessing here' );
+//let guessFruit = prompt( 'Turn on your detective skills and guess the fruit that I love?[You have only 6 attempts]','Write your guessing here' );
 
-let fruit = ['banana','apple','kiwi','Cherre'];
+//let fruit = ['banana','apple','kiwi','Cherre'];
 
-let o = 0;
+//let o = 0;
+//let c= 0;
+//let d=0;
 
-for ( o ; o < 5 ;o++ ){
-  if (guessFruit.toLowerCase()===fruit[o]){
-    alert('You do it right!');
-    score=score+1;
-    //console.log('I asked about guessing my fav fruit and you answerd!');
-    break;
-  }else{
-    let attemptsLeft=6-(o+1);
-    alert('Be ware you only have ['+attemptsLeft+'] attempts')
+/*for ( o ; o < 5 ;o++ ){
+  for (c;c<fruit.length;c++){
+    if (guessFruit.toLowerCase()===fruit[c]){
+      alert('You do it right!');
+      score=score+1;
+      //console.log('I asked about guessing my fav fruit and you answerd!');
+      break;
+    }
+  }
+  for (d;d<fruit.length;d++){
+    if (guessFruit.toLowerCase()!==fruit[d]){
+      let attemptsLeft=6-(o+1);
+      alert('Be ware you only have ['+attemptsLeft+'] attempts');
+      guessFruit = prompt( 'Sorry, you did not do it right, try again');
+      guessFruit=guessFruit.toLowerCase();
+      break;
+    }
+
+  }
+}*/
+
+/*for ( o ; o < 5 ;o++ ){
+  for (c;c<fruit.length;c++){
+    while(guessFruit.toLowerCase()===fruit[c]){
+      alert('You do it right!');
+      score=score+1;
+      break;
+    }
+  }
+  for (d;d<fruit.length;d++){
+    while(fruit[d]!==guessFruit.toLowerCase()){
+      let attemptsLeft=6-(o+1);
+      alert('Be ware you only have ['+attemptsLeft+'] attempts');
+      break;
+    }
     guessFruit = prompt( 'Sorry, you did not do it right, try again');
     guessFruit=guessFruit.toLowerCase();
   }
 }
+*/
+
+alert('Now we will play another guessing game, press ok to play!');
+
+let fruit = ['banana','apple','kiwi','Cherre'];
+
+let o=0;
+
+for ( o ; o < 6; o++) {
+  let guessFruit = prompt('Turn on your detective skills and guess the fruit that I love?[You have only 6 attempts]','Write your guessing here');
+  let guess = guessFruit.toLowerCase();
+  for (let d = 0; d < fruit.length; d++){
+    while (guess === fruit[d]) {
+      alert('You do it right!');
+      score=score+1;
+      o = 6;
+      alert('The right answers are ['+fruit+']');
+      break;
+    }
+  }
+  if (o !==6){
+    let attemptsLeft = 6 - ( o + 1 ) ;
+    alert('Be ware you only have ['+attemptsLeft+'] attempts');
+  }
+}
+
+
 if (o===5){
   alert('Sorry, you run out if attempts');
   alert('The right answers are ['+fruit+']');
