@@ -312,7 +312,7 @@ for ( o ; o < 6; o++) {
       break;
     }
   }
-  if (o !===6){
+  if (o !== 6){
     let attemptsLeft = 6 - ( o + 1 ) ;
     alert('Be ware you only have ['+attemptsLeft+'] attempts');
   }
