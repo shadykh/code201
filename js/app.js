@@ -227,7 +227,7 @@ let corNum = 5;
 let i = 0;
 
 for (i ; i < 3; i++){
-  if (guessNum == corNum ) {
+  if (guessNum === corNum ) {
     alert('You are right! Did you ever think to be a police detective?');
     score=score+1;
     //console.log('I asked about guessing number and you answerd!');
@@ -238,7 +238,7 @@ for (i ; i < 3; i++){
     guessNum = prompt('It is too low, try again!');
   }
 }
-if (i==3){
+if (i === 3){
   alert('Sorry, you run out if attempts');
   //console.log('I asked about guessing number but you did not answer!');
 }
@@ -305,14 +305,14 @@ for ( o ; o < 6; o++) {
   for (let d = 0; d < fruit.length; d++){
     while (guess === fruit[d]) {
       alert('You do it right!');
-      score=score+1;
+      score = score + 1;
       o = 6;
       alert('The right answers are ['+fruit+']');
       //console.log('I asked about guessing my fav fruit and you answerd!');
       break;
     }
   }
-  if (o !==6){
+  if (o !===6){
     let attemptsLeft = 6 - ( o + 1 ) ;
     alert('Be ware you only have ['+attemptsLeft+'] attempts');
   }
@@ -326,3 +326,4 @@ if (o===5){
 }
 
 alert('Your score is ['+ score +'] from [7]');
+
