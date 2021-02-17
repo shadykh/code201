@@ -327,3 +327,4 @@ if (o===5){
 
 alert('Your score is ['+ score +'] from [7]');
 
+//Fixed
