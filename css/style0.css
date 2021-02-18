@@ -1,0 +1,100 @@
+body{
+  background-image: url(https://cdn.hipwallpaper.com/i/55/77/cbwa09.jpg);
+  background-size: cover;
+  width: 50%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 20px solid rgb(48, 41, 41);
+  border-radius: 100px;
+}
+
+#headerImg{
+    width: 150px;
+}
+#headerDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+#ulNav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(187, 187, 187);
+    display: inline-flex;
+    align-items: center;
+  }
+  
+#ilNav {
+    float: left;
+  }
+  
+#ilNav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+#ilNav a:hover {
+    background-color: #111;
+  }
+h3{
+  text-transform: capitalize;
+  border-radius: 10px;
+  width: 50%;
+  margin: auto;
+  background: aquamarine;
+  display: block;
+  margin: auto;
+}
+article{
+  line-height: 30px;
+  text-align: center;
+}
+main ul li{
+  /*list-style-type: none;
+  border-radius: 10px;
+  border-width: 20px;
+  width: 700px;
+  margin: auto;*/
+}
+ul{
+  list-style-type: none;
+}
+main ul li:nth-child(odd){
+  background-color: rgb(203, 248, 233);
+
+}
+main ul li:nth-child(even){
+  background-color: rgb(150, 187, 174);
+}
+main{
+  font-family: cursive;
+}
+#footerImg{
+  width: 120px;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: gainsboro;
+  font-family: cursive;
+  border-radius: 20px;
+}
+nav{
+  text-align: center;
+}
+ol{
+  display: inline-block;
+}
+article{
+  text-align: center;
+}

@@ -1,100 +1,123 @@
 body{
-    /*width: auto;
-    margin: auto;*/
-    /* background-image: url(https://cdn6.f-cdn.com/contestentries/1476645/3722903/5c79055058298_thumb900.jpg);
-    background-size: cover;*/
-    background-color: cadetblue;
-    width: 50%;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+    background-image: url(https://cdn.hipwallpaper.com/i/55/77/cbwa09.jpg);
+    width: auto;
+    height: auto;
     padding: 20px;
-    border: 20px solid rgb(116, 116, 116);
-    background: lavender;
-    border-radius: 100px;
-}
+    border: 5px solid #b3b3b3 ;
+    border-radius: 15px 50px;
+    font-family: cursive;
+  }
 #headerImg{
-    width: 100px;
-}
-#headerDiv{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
- 
-#ulNav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(187, 187, 187);
-    display: inline-flex;
-    align-items: center;
-  }
-  
-#ilNav {
+    width: 150px;
     float: left;
-  }
-  
-#ilNav a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-#ilNav a:hover {
-    background-color: #111;
-  }
-h3{
-  text-transform: capitalize;
-  border-radius: 10px;
-  width: 50%;
-  margin: auto;
-  background: aquamarine;
-  display: block;
-  margin: auto;
-}
-article{
-  line-height: 30px;
-  text-align: center;
-}
-main ul li{
-  /*list-style-type: none;
-  border-radius: 10px;
-  border-width: 20px;
-  width: 700px;
-  margin: auto;*/
-}
-ul{
-  list-style-type: none;
-}
-main ul li:nth-child(odd){
-  background-color: rgb(203, 248, 233);
-
-}
-main ul li:nth-child(even){
-  background-color: rgb(150, 187, 174);
-}
-main{
-  font-family: cursive;
 }
 #footerImg{
-  width: 120px;
+    width: 70px;
+    float: left;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border: 5px solid #b3b3b3 ;
+    border-radius: 15px 50px;
+    background:url(https://cdn.wallpapersafari.com/23/96/sSjCqQ.jpg);
+}
+h1{
+    color: black;
+    width:auto;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 220px;
+}
+h3{
+    text-transform: capitalize;
 }
 footer{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: gainsboro;
-  font-family: cursive;
-  border-radius: 20px;
+    background: url(https://cdn.wallpapersafari.com/77/72/NwKjEB.jpg);
+    text-align: center;
+    border: 5px solid #b3b3b3 ;
+    border-radius: 15px 50px;
+    padding: 10px;
+}
+#footerPa{
+    align-items: center;
 }
 nav{
-  text-align: center;
+    text-align: right;
+    flex: 3;
+    font-size: 20px;
+    font-weight: bold;
 }
-ol{
-  display: inline-block;
+nav ul{ 
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    padding: 5px;
+    color: #000000;
+    
+}
+a:hover{
+    background-color:#fffde7;
+    border: 5px solid #b3b3b3 ;
+    border-radius: 15px 50px;
+}
+main{
+    text-align: center;
+}
+main ul li {
+    list-style-type: none;
+}
+ol li{
+    list-style-position: inside;
+}
+#div0{
+    background: url(https://i.pinimg.com/originals/6e/ad/c3/6eadc33a190dc2f4bb78bdad40b0eb84.jpg);
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: rgb(139, 139, 139);
+    border: 5px solid #b3b3b3 ;
+    padding: 10px;
+    border-radius: 35px 90px;
+    margin: 10px;
+}
+#div1{
+    background: url(https://image.freepik.com/free-photo/airplane-line-indicating-route-blue-background-concept-travel-airline-tickets-flight-route-pallet_164357-1194.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: lightskyblue;
+    border: 5px solid #b3b3b3 ;
+    padding: 10px;
+    border-radius: 35px 90px;
+    margin: 10px;
+    text-decoration-color: bisque;
+}
+#div2{
+    background: url(https://www.iesabroad.org/files/styles/blog_feature/public/blog/images/amueller/2017-10-23/default_featured_image_29.jpg?itok=VWWiZeGj);
+    border: 5px solid #b3b3b3 ;
+    padding: 10px;
+    border-radius: 35px 90px;
+    margin: 10px;
+}
+#div3{
+    background: url(https://www.employmenthelp.org/wp-content/uploads/Job-Board-Header-Background.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: lightsteelblue;
+    border: 5px solid #b3b3b3 ;
+    padding: 10px;
+    border-radius: 35px 90px;
+    margin: 10px;
 }
